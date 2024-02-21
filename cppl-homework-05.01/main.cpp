@@ -6,14 +6,30 @@
 //
 
 #include <iostream>
-#include "template_func.hpp"
-#include "arr_squaring.hpp"
+#include <vector>
+
+
+template<class T>
+T squaring(T a)
+{
+   return a * a;
+};
+
+template<class T>
+std::vector<T> squaring(std::vector<int> &v)
+{
+  for(int i=0; i<v.size(); i++){
+    v[i] = v[i]*v[i];
+  }
+  return v;
+}
+    
 
 
 int main(int argc, const char * argv[]) {
     
     auto a = 0;
-    int size;
+   
     
     
     std::cout << "Squaring function" << std::endl;
@@ -22,13 +38,23 @@ int main(int argc, const char * argv[]) {
     std::cout << "[OUT]: " << squaring(a) << std::endl;
   
     std::cout<< "Squaring array function" << std::endl;
-    std::cout << "Please enter size of your array: ";
-    std::cin >> size;
     std::cout << "[IN]: ";
-    simpleArray<int> arr(size);
-    arr.set_arr(size);
+    std::vector<int> b = { 4, 17, -3, 6 };
+      for(int i = 0; i < b.size(); i++)
+        {
+      std::cout << b[i] << " ";
+        }
+    std::cout << std::endl;
+
+    squaring<int>(b);
     std::cout << "[OUT]: ";
-    arr.squaringArray();
+      for (int i = 0; i < b.size(); i++)
+      {
+        std::cout << b[i] << " ";
+      }
+    std::cout << std::endl;
+
+    
     
     
     return 0;

@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		00958D4E2B7FCE9900514C11 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00958D4D2B7FCE9900514C11 /* main.cpp */; };
-		00958D562B7FCEC200514C11 /* template_func.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00958D542B7FCEC100514C11 /* template_func.cpp */; };
-		00958D592B7FE21D00514C11 /* arr_squaring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00958D572B7FE21D00514C11 /* arr_squaring.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,10 +25,6 @@
 /* Begin PBXFileReference section */
 		00958D4A2B7FCE9900514C11 /* cppl-homework-05.01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cppl-homework-05.01"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00958D4D2B7FCE9900514C11 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		00958D542B7FCEC100514C11 /* template_func.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = template_func.cpp; sourceTree = "<group>"; };
-		00958D552B7FCEC200514C11 /* template_func.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = template_func.hpp; sourceTree = "<group>"; };
-		00958D572B7FE21D00514C11 /* arr_squaring.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = arr_squaring.cpp; sourceTree = "<group>"; };
-		00958D582B7FE21D00514C11 /* arr_squaring.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = arr_squaring.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +41,6 @@
 		00958D412B7FCE9900514C11 = {
 			isa = PBXGroup;
 			children = (
-				00958D572B7FE21D00514C11 /* arr_squaring.cpp */,
-				00958D582B7FE21D00514C11 /* arr_squaring.hpp */,
-				00958D542B7FCEC100514C11 /* template_func.cpp */,
-				00958D552B7FCEC200514C11 /* template_func.hpp */,
 				00958D4C2B7FCE9900514C11 /* cppl-homework-05.01 */,
 				00958D4B2B7FCE9900514C11 /* Products */,
 			);
@@ -130,8 +120,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				00958D4E2B7FCE9900514C11 /* main.cpp in Sources */,
-				00958D562B7FCEC200514C11 /* template_func.cpp in Sources */,
-				00958D592B7FE21D00514C11 /* arr_squaring.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
