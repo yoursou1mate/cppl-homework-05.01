@@ -16,12 +16,14 @@ T squaring(T a)
 };
 
 template<class T>
-std::vector<T> squaring(std::vector<int> &v)
+std::vector<T> sqr(std::vector<T> &v)
 {
-  for(int i=0; i<v.size(); i++){
-    v[i] = v[i]*v[i];
+    std::vector<T> result (v.size());
+  for(int i=0; i<v.size(); i++)
+  {
+      result[i] = v[i]*v[i];
   }
-  return v;
+  return result;
 }
     
 
@@ -37,6 +39,8 @@ int main(int argc, const char * argv[]) {
     std::cin >> a;
     std::cout << "[OUT]: " << squaring(a) << std::endl;
   
+    std::cout << a << std::endl;
+    
     std::cout<< "Squaring array function" << std::endl;
     std::cout << "[IN]: ";
     std::vector<int> b = { 4, 17, -3, 6 };
@@ -46,16 +50,13 @@ int main(int argc, const char * argv[]) {
         }
     std::cout << std::endl;
 
-    squaring<int>(b);
+    sqr<int>(b);
+    std::vector<int> squared = sqr<int>(b);
     std::cout << "[OUT]: ";
-      for (int i = 0; i < b.size(); i++)
+      for(const auto& elem : squared)
       {
-        std::cout << b[i] << " ";
+          std::cout << elem << " ";
       }
     std::cout << std::endl;
-
-    
-    
-    
     return 0;
 }
